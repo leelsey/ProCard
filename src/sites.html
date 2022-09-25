@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB" prefix="og: http://ogp.me/ns#" class="no-js">
+  <head>
+    <title>ProCard</title>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ProCard" />
+    <link rel="apple-touch-icon" href="./assets/img/icons/procard-icon-180x180.png" />
+    <link rel="manifest" href="./assets/js/manifest.json" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div type="button" class="close-ctr">
+      <div type="button" class="close-button"></div>
+    </div>
+    <div class="container">
+      <div class="col-ctr">
+        <div class="left-ctr">
+          <!-- Back Button -->
+          <div class="nav-back-layer">
+            <a href="./index.html" class="nav-back"></a>
+          </div>
+          <!-- Cover image -->
+          <img class="profile-cover" src="./assets/img/profile-cover.jpg" alt="" />
+          <div class="nameboard">
+            <!-- Photo Modal -->
+            <div id="modal-layer">
+              <div class="modal-bg">
+                <div class="modal"></div>
+                <div href="#" class="modal-close"></div>
+              </div>
+            </div>
+            <!-- About Me -->
+            <div class="profile-layer">
+              <div id="photo-viewer" class="button" loading="lazy">
+                <div type="button" class="profile-photo"></div>
+              </div>
+            </div>
+            <h1 class="my-name">Jane Doe</h1>
+            <h2 class="my-job">Programmer</h2>
+            <!-- Logo (Home button) - Mobile -->
+            <div class="logo-mobile-line">
+              <a href="./index.html"><div class="logo-mobile-icon" alt=""></div></a>
+            </div>           
+          </div>
+        </div>
+        <!-- Logo (Home button) - Desktop -->
+        <div class="logo-ctr">
+          <div class="logo-layer"></div>
+          <div class="logo-layer">
+            <a href="./index.html"><div class="logo-icon" alt=""></div></a>
+          </div>
+          <div class="logo-layer"></div>
+        </div>
+      </div>
+      <!-- Navigation Bar -->
+      <div class="col-ctr">
+        <div class="navbar">
+          <a href="./profile.html" class="nav-title">Profile</a>
+          <a href="#" class="nav-title">Download CV</a>
+          <a href="./sites.html" class="nav-title-on">Sites</a>
+        </div>
+
+        <!-- My Site and Social -->
+        <div class="right-ctr">
+          <div class="scroll-ctr">
+
+            <!-- My Sites (Blog) Link -->
+            <div class="subcontainer">
+              <div class="sites-top-title-ctr">
+                <h1 class="title">My Blog</h1>
+                <h2 class="subtitle">ABOUT MY SITE</h2>
+              </div>
+              <div class="subcontainer">
+                <a href="https://github.com/leelsey/procard">
+                  <button class="sites-button website-goto">
+                    <div class="sites-button-arrow"></div>
+                    <div class="sites-button-font">Read more</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Social Media Link -->
+            <div class="subcontainer">
+              <div class="title-ctr">
+                <h1 class="title">Social Media</h1>
+                <h2 class="subtitle">FOLLOW ME</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="subcontainer">
+              <div class="subcontainer"></div>
+              <div class="sn-layer">
+                <a href="https://www.linkedin.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/linkedin.svg" /></button>
+                </a>
+                <a href="https://twitter.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/twitter.svg" /></button>
+                </a>
+                <a href="https://facebook.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/facebook.svg" /></button>
+                </a>
+                <a href="https://instagram.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/instagram.svg" /></button>
+                </a>
+                <a href="https://www.snapchat.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/snapchat.svg" /></button>
+                </a>
+                <a href="https://www.behance.net">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/behance.svg" /></button>
+                </a>
+                <a href="https://dribbble.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/dribbble.svg" /></button>
+                </a>
+                <a href="https://www.pinterest.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/pinterest.svg" /></button>
+                </a>
+                <a href="https://soundcloud.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/soundcloud.svg" /></button>
+                </a>
+                <a href="https://https://www.youtube.com">
+                  <button class="sn-button sn-goto"><img class="sn-icon" src="./assets/img/sn-icons/youtube.svg" /></button>
+                </a>
+              </div>
+              <div class="subcontainer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./assets/js/main.js"></script>

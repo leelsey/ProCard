@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB" prefix="og: http://ogp.me/ns#" class="no-js">
+  <head>
+    <title>ProCard</title>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ProCard" />
+    <link rel="apple-touch-icon" href="./assets/img/icons/procard-icon-180x180.png" />
+    <link rel="manifest" href="./assets/js/manifest.json" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div type="button" class="close-ctr">
+      <div type="button" class="close-button"></div>
+    </div>
+    <div class="container">
+      <div class="col-ctr">
+        <div class="left-ctr">
+          <!-- Back Button -->
+          <div class="nav-back-layer">
+            <a href="./index.html" class="nav-back"></a>
+          </div>
+          <!-- Cover image -->
+          <img class="profile-cover" src="./assets/img/profile-cover.jpg" alt="" />
+          <div class="nameboard">
+            <!-- Photo Modal -->
+            <div id="modal-layer">
+              <div class="modal-bg">
+                <div class="modal"></div>
+                <div href="#" class="modal-close"></div>
+              </div>
+            </div>
+            <!-- About Me -->
+            <div class="profile-layer">
+              <div id="photo-viewer" class="button" loading="lazy">
+                <div type="button" class="profile-photo"></div>
+              </div>
+            </div>
+            <h1 class="my-name">Jane Doe</h1>
+            <h2 class="my-job">Programmer</h2>
+            <!-- Logo (Home button) - Mobile -->
+            <div class="logo-mobile-line">
+              <a href="./index.html"><div class="logo-mobile-icon" alt=""></div></a>
+            </div>           
+          </div>
+        </div>
+        <!-- Logo (Home button) - Desktop -->
+        <div class="logo-ctr">
+          <div class="logo-layer"></div>
+          <div class="logo-layer">
+            <a href="./index.html"><div class="logo-icon" alt=""></div></a>
+          </div>
+          <div class="logo-layer"></div>
+        </div>
+      </div>
+      <!-- Navigation Bar -->      
+      <div class="col-ctr">
+        <div class="navbar">
+          <a href="./profile.html" class="nav-title-on">Profile</a>
+          <a href="#" class="nav-title">Download CV</a>
+          <a href="./sites.html" class="nav-title">Sites</a>
+        </div>
+
+        <!-- Profile Contents -->
+        <div class="right-ctr">
+          <div class="scroll-ctr">
+
+          <!-- About Me -->
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="top-about-title-ctr">
+                <h1 class="title">About Me</h1>
+                <h2 class="subtitle">MY STORY</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="paragraph-ctr">
+              <p class="paragraph-font"><strong>Hello! I’m Jane Doe.</strong><br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="identify-ctr">
+              <div>
+                <h3 class="identify-title">AGE:</h3>
+                <h3 class="identify-paragraph">24</h3>
+              </div>
+              <div>
+                <h3 class="identify-title">RESIDENCE:</h3>
+                <h3 class="identify-paragraph">United Kingdom</h3>
+              </div>
+              <div>
+                <h3 class="identify-title">ADDRESS:</h3>
+                <h3 class="identify-paragraph">London</h3>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <!-- My Services -->
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="about-title-ctr">
+                <h1 class="title">My Services</h1>
+                <h2 class="subtitle">WHAT CAN I DO</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="paragraph-ctr">
+              <div>
+                <img class="paragraph-image" src="./assets/img/sample-image.png" />
+                <h3 class="paragraph-font paragraph-title"><b>Web Developer<b></h3>
+              </div>
+              <p class="paragraph-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="paragraph-ctr">
+              <div>
+                <img class="paragraph-image" src="./assets/img/sample-image.png" />
+                <h3 class="paragraph-font paragraph-title"><b>Server-side Engineering<b></h3>
+              </div>
+              <p class="paragraph-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="paragraph-ctr">
+              <div>
+                <img class="paragraph-image" src="./assets/img/sample-image.png" />
+                <h3 class="paragraph-font paragraph-title"><b>UX/UI Design<b></h3>
+              </div>
+              <p class="paragraph-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <!-- My Skills -->
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="about-title-ctr">
+                <h1 class="title">My Skills</h1>
+                <h2 class="subtitle">CREATIVITY ABILITY</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="skill-ctr">
+              <div class="skill-layer" id="skill-s1">
+                <h3 class="skill-title">Illustration</h3>
+                <h3 class="skill-subtitle">- DESIGN ABILITY</h3>
+                <p class="skill-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="skillbar-ctr">
+                  <h4 class="skillbar-num">84%</h4>
+                  <div class="skillbar">
+                    <div class="skillbar-line" style="width: 84%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-layer" id="skill-s2">
+                <h3 class="skill-title">HTML & CSS</h3>
+                <h3 class="skill-subtitle">- WEB DESIGN</h3>
+                <p class="skill-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="skillbar-ctr">
+                  <h4 class="skillbar-num">72%</h4>
+                  <div class="skillbar">
+                    <div class="skillbar-line" style="width: 72%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-layer" id="skill-s3">
+                <h3 class="skill-title">PHP</h3>
+                <h3 class="skill-subtitle">- CODING ABILITY</h3>
+                <p class="skill-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="skillbar-ctr">
+                  <h4 class="skillbar-num">79%</h4>
+                  <div class="skillbar">
+                    <div class="skillbar-line" style="width: 79%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-layer" id="skill-s4">
+                <h3 class="skill-title">Python</h3>
+                <h3 class="skill-subtitle">- PROGRAMMING ABILITY</h3>
+                <p class="skill-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="skillbar-ctr">
+                  <h4 class="skillbar-num">92%</h4>
+                  <div class="skillbar">
+                    <div class="skillbar-line" style="width: 92%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <!-- Certifications -->
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="about-title-ctr">
+                <h1 class="title">Certifications</h1>
+                <h2 class="subtitle">PROVEN ABILITY</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="cert-ctr">
+              <div class="cert-layer" id="cert-s1">
+                <img class="cert-image" src="./assets/img/sample-image.png" />
+                <h3 class="cert-font"><b>&nbsp;Certification 1<b></h3>
+              </div>
+              <div class="cert-layer" id="cert-s2">
+                <img class="cert-image" src="./assets/img/sample-image.png" />
+                <h3 class="cert-font"><b>&nbsp;Certification 2<b></h3>
+              </div>
+              <div class="cert-layer" id="cert-s3">
+                <img class="cert-image" src="./assets/img/sample-image.png" />
+                <h3 class="cert-font"><b>&nbsp;Certification 3<b></h3>
+              </div>
+              <div class="cert-layer" id="cert-s4">
+                <img class="cert-image" src="./assets/img/sample-image.png" />
+                <h3 class="cert-font"><b>&nbsp;Certification 4<b></h3>
+              </div>
+              <div class="cert-layer" id="cert-s5">
+                <img class="cert-image" src="./assets/img/sample-image.png" />
+                <h3 class="cert-font"><b>&nbsp;Certification 5<b></h3>
+              </div>
+              <div class="cert-layer" id="cert-s6">
+                <img class="cert-image" src="./assets/img/sample-image.png" />
+                <h3 class="cert-font"><b>&nbsp;Certification 6<b></h3>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <!-- Experience -->
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="about-title-ctr">
+                <h1 class="title">Experience</h1>
+                <h2 class="subtitle">WORKING WITH</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="exp-ctr">
+              <div class="exp-layer" id="exp-s1">
+                <h4 class="exp-period">PRESENT</h4>
+                <h3 class="exp-title">Jobs Name<br>Company Name Inc.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="exp-layer" id="exp-s2">
+                <h4 class="exp-period">2020-2021</h4>
+                <h3 class="exp-title">Jobs Name<br>Company Name Inc.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="exp-layer" id="exp-s3">
+                <h4 class="exp-period">2019-2020</h4>
+                <h3 class="exp-title">Jobs Name<br>Company Name Inc.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="exp-layer" id="exp-s4">
+                <h4 class="exp-period">2017-2019</h4>
+                <h3 class="exp-title">Jobs Name<br>Company Name Inc.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <!-- Education -->
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="about-title-ctr">
+                <h1 class="title">Education</h1>
+                <h2 class="subtitle">STUDIED AT</h2>
+              </div>
+              <div class="subcontainer">
+                <div class="space-ctr"></div>
+              </div>
+            </div>
+            <div class="exp-ctr">
+              <div class="exp-layer" id="edu-s1">
+                <h4 class="exp-period">2021-2022</h4>
+                <h3 class="exp-title">Course Name<br>MSc of Full-name Uni.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="exp-layer" id="edu-s2">
+                <h4 class="exp-period">2020-2021</h4>
+                <h3 class="exp-title">Course Name<br>BSc of Full-name Uni.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="exp-layer" id="edu-s3">
+                <h4 class="exp-period">2019-2020</h4>
+                <h3 class="exp-title">Course Name<br>DSc of Full-name Uni.</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="exp-layer" id="edu-s4">
+                <h4 class="exp-period">2017-2019</h4>
+                <h3 class="exp-title">A Student<br>Name Hight School</h3>
+                <p class="exp-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-ctr">
+            <div class="subcontainer">
+              <div class="space-ctr"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./assets/js/main.js?ver=1"></script>
