@@ -10,3 +10,4 @@ Still in development. Future features include:
 - Responsive web design
 - Convert to React JS
 - Easy content modification through JSON file
+- vCard will be separated into other projects
