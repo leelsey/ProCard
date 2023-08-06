@@ -1,17 +1,14 @@
 {
   "name": "procard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is a template that anyone can easily introduce themselves. The site structure is as follows: - main   - profile   - sites",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.0",
-    "node-sass": "^6.0.0",
-    "sass": "^1.34.0",
-    "tsc": "^2.0.3"
+    "node-sass": "^9.0.0"
   }
 }
