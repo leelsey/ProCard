@@ -155,7 +155,7 @@ strong {
   }
 }
 .scroll-ctr {
-  @include laptop {
+  @include desktop {
     height: 100vh;
     margin-top: -140px;
     overflow-y: scroll;
@@ -186,7 +186,7 @@ strong {
     position: relative;
     border-top: 1.4px solid #dddddd;
     display: flex;
-    @include laptop {
+    @include desktop {
       display: none;
     }
   }
@@ -393,6 +393,7 @@ strong {
     padding: 20px 24px 35px 24px;
     border: none;
     position: relative;
+    text-align: center;
     @include tablet {}
     @include laptop {}
     @include desktop {
@@ -403,12 +404,11 @@ strong {
       border-radius: 20px 0px 0px 20px;
       box-shadow: -3px 2px 3px rgba(0, 0, 0, 0.16);
       background-color: #fdfdfd;
+      text-align: left;
     }
   }
   &-title {
-    width: 38px;
-    height: 20px;
-    margin: 43px 25px 0 30px;
+    margin: 0 34px 0 20px;
     font-family: Arial;
     font-size: 18px;
     font-weight: normal;
@@ -422,8 +422,9 @@ strong {
     @include tablet {}
     @include laptop {}
     @include desktop {
-      display: inline-block;
       width: 30%;
+      margin: 0 40px 0 40px;
+      display: inline-block;
       height: 10px;
       margin: 5px 0 0 15px;
       font-weight: bold;
@@ -432,30 +433,37 @@ strong {
         color: #0f0f0f;
       }
     }
-  }
-  &-title-on {
-    width: 38px;
-    height: 20px;
-    margin: 43px 25px 0 30px;
-    font-family: Arial;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #0f0f0f;
-    text-decoration: none;
-    transition: all 1.5s ease;
-    @include tablet {}
-    @include laptop {}
-    @include desktop {
-      display: inline-block;
-      width: 30%;
-      height: 10px;
-      margin: 5px 0 0 15px;
-      font-weight: bold;
+    &-on {
+      margin: 0 34px 0 20px;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #0f0f0f;
+      text-decoration: none;
+      @include tablet {}
+      @include laptop {}
+      @include desktop {
+        // display: inline-block;
+        // height: 10px;
+        // margin: 5px 0 0 15px;
+        // font-weight: bold;
+        // transition: all .5s ease;
+        width: 30%;
+        margin: 0 40px 0 40px;
+        display: inline-block;
+        height: 10px;
+        margin: 5px 0 0 15px;
+        font-weight: bold;
+        transition: all .5s ease;
+        &:hover {
+          color: #0f0f0f;
+        }
+      }
     }
   }
   &-back {
@@ -468,7 +476,7 @@ strong {
     border-right: 1vmin solid black;
     box-shadow: 0 0 0 lightgray;
     transition: all 200ms ease;
-     left: 0;
+    left: 0;
     transform: translate3d(0,-50%,0) rotate(-135deg);
     &:hover {
       border-color: silver;
@@ -479,16 +487,16 @@ strong {
       height: 5vmin;
       transform: translate(-50%,-50%);
       position: absolute;
-      margin: 60px 0 0 60px;
+      margin: 60px 0 0 64px;
       z-index: 3;
       @include tablet {
-        margin: 60px 0 0 64px;
+        margin: 62px 0 0 68px;
       }
       @include laptop {
-        margin: 64px 0 0 67px;
+        margin: 64px 0 0 69px;
       }
       @include desktop {
-        margin: 68px 0 0 70px;
+        margin: 66px 0 0 78px;
       }
     }
   }
@@ -648,10 +656,10 @@ strong {
     display: flex;
     margin: 62px 0 58px 0;
     @include laptop {
-      margin: 230px 0 1px 0;
+      margin: 70px 0 140px 0;
     }
     @include desktop {
-      margin: 250px 0 1px 0;
+      margin: 250px 0 4px 0;
     }
     @include screen {
       margin: 320px 0 4px 0;
@@ -723,6 +731,7 @@ hr.divider {
   }
   &-title {
     font-size: 18px;
+    font-weight: bold;
     display: inline-block;
     @include laptop {}
     @include desktop {
@@ -1086,10 +1095,12 @@ hr.divider {
   &-top-title-ctr {
     margin: auto;
     margin-top: 30px;
+    margin-left: 0;
     position: relative;
     @include tablet {}
     @include laptop {}
     @include desktop {
+      margin-left: auto;
       margin-top: 220px;
     }
   }
@@ -1099,11 +1110,10 @@ hr.divider {
     margin: 140px 0 0 10px;
     padding: 14px 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: white;
-    background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
+    border: none;
+    transition: all 0.3s;
     position: relative;
     display: inline-block;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
@@ -1116,6 +1126,10 @@ hr.divider {
       margin: 240px 30px 0 0;
       padding: 9px 15px 9px 15px;
       float: right;
+    }
+    &:hover {
+      // box-shadow: -7px -7px 20px 0px #fdfdfd, -4px -4px 5px 0px #fdfdfd, 7px 7px 20px 0px #cbcbcb, 4px 4px 5px 0px #cbcbcb;
+      transform: translate(0px, 3px);
     }
   }
   &-button-font{
@@ -1144,34 +1158,6 @@ hr.divider {
     @include desktop {
       margin: 1px 8px 0 0;
     }
-  }
-}
-.website-goto {
-  border: none;
-  color: black;
-  &:after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    direction: rtl;
-    z-index: -1;
-    border-radius: 8px;
-    box-shadow: -7px -7px 20px 0px #fdfdfd, -4px -4px 5px 0px #fdfdfd, 7px 7px 20px 0px #cbcbcb, 4px 4px 5px 0px #cbcbcb;
-    transition: all 0.3s ease;
-  }
-  &:hover {
-    color: black;
-  }
-  &:hover:after {
-    left: auto;
-    right: 0;
-    width: 100%;
-  }
-  &:active {
-    top: 2px;
   }
 }
 .sn {
@@ -1477,7 +1463,7 @@ hr.divider {
   // Public part
   // 
   body {
-    background-color: black; 
+    background-color: #040404;
   }
   strong {
     color: #fdfdfd;
@@ -1534,9 +1520,9 @@ hr.divider {
           color: #fdfdfd;
         }
       }
-    }
-    &-title-on  {
-      color: #fdfdfd;
+      &-on {
+        color: #fdfdfd;
+      }
     }
     &-back {
       border-top: 1vmin solid white;
@@ -1635,16 +1621,6 @@ hr.divider {
       background: url($goto-arrow-dark) center center / cover;
     }
     &-button-font{
-      color: white;
-    }
-  }
-  .website-goto {
-    border: none;
-    color: white;
-    &:after {
-      box-shadow: -7px -7px 20px 0px #5c5c5c, -4px -4px 5px 0px #5c5c5c, 7px 7px 20px 0px #272727, 4px 4px 5px 0px #272727;
-    }
-    &:hover {
       color: white;
     }
   }
